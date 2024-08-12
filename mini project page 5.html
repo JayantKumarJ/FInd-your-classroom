@@ -1,0 +1,344 @@
+
+<html>
+
+<head>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: #00CCE5;
+            justify-content: space-between;
+            overflow: auto;
+            padding: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+        }
+
+        ul li a:hover {
+            background-color: #D3D3D3;
+        }
+
+        center {
+            text-align: center;
+        }
+
+        #logo {
+            margin-left: 10px;
+        }
+
+        form {
+            text-align: center;
+            max-width: 40vw;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto; /* Center horizontally */
+        }
+
+        form label {
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        form input {
+            text-align: center;
+            border: 2px solid lightslategray;
+            height: 40px;
+            border-radius: 3px;
+            padding: 5px;
+            font-size: 1rem;
+        }
+
+        form input:focus {
+            text-align: center;
+            outline: none;
+            border: 2px solid darkslategray;
+        }
+
+        input[type="button"] {
+            font-size: 18px;
+            background-color: #00CCE5;
+            border-color: white;
+            width: 310px;
+            height: 45px;
+            color: black;
+            margin: 0 auto; /* Center horizontally */
+        }
+
+        h2 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="C:\Users\Jayant\Desktop\Mini Project\FInd-your-classroom\PhotoRoom-20230908_120829.png" width="200px" height="60px"
+            id="logo" alt="Logo image" />
+        <ul>
+	<li><a href="file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/College%20map.html">College Map</a></li>
+	 <li><a href="C:\Users\Jayant\Desktop\Mini Project\about us.html">About The Project</a></li>
+         <li><a href="file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/mini%20project%20page%204.html">Home</a></li>
+        <li><a href="file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/mini%20project%20page%207.html">ClassRoom Finder!</a></li>
+        <li><a href="file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/mini%20project%20page%205.html">Professor Finder!</a></li>
+
+        </ul>
+    </nav>
+
+    <center>
+        <h1></h1>
+        <img src="C:\Users\Jayant\Desktop\Mini Project\FInd-your-classroom\Copy of upgrade .png" alt="Loyola Academy" width="500"
+            height="200">
+    </center>
+
+    <center>
+        <h2>Find your Professor!</h2>
+    </center>
+    <br>
+
+    <form>
+<br>
+
+        <center>
+            <label for="myProfessor"></label>
+            <input list="ProfessorName" id="myProfessor" name="myProfessor"
+                placeholder="Select Professor from the list" />
+        </center>
+        <datalist id="ProfessorName">
+            <option value="Mrs S.Swapna">
+            <option value="Mrs K.Anitha">
+            <option value="Mrs K.Hima Bindu">
+            <option value="Mrs S.Lakshmi">
+            <option value="Mrs D.Sravani">
+        </datalist>
+<br>
+        <center>
+            <label for="DayOrder"></label>
+            <input list="DayOrderList" id="DayOrder" name="DayOrder" placeholder="Select Day Order from the list" />
+        </center>
+        <datalist id="DayOrderList">
+            <option value="Day Order 1">
+            <option value="Day Order 2">
+            <option value="Day Order 3">
+            <option value="Day Order 4">
+            <option value="Day Order 5">
+            <option value="Day Order 6">
+        </datalist>
+<br>
+
+        <center>
+            <input type="button" value="Submit" onclick="dropdownChange();" />
+        </center>
+
+        </form>
+
+    <script>
+        function dropdownChange() {
+            var myProfessor = document.getElementById("myProfessor").value;
+            var DayOrder = document.getElementById("DayOrder").value;
+
+//Mrs S.Swapna
+
+            if (myProfessor === "Mrs S.Swapna" && DayOrder === "Day Order 1") 
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Swapna%201.html";
+        }
+	else if (myProfessor === "Mrs S.Swapna" && DayOrder === "Day Order 2")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Swapna%202.html";
+	}
+	else if (myProfessor === "Mrs S.Swapna" && DayOrder === "Day Order 3")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Swapna%203.html";
+	}
+	else if (myProfessor === "Mrs S.Swapna" && DayOrder === "Day Order 4")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Swapna%204.html";
+	}
+	else if (myProfessor === "Mrs S.Swapna" && DayOrder === "Day Order 5")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Swapna%205.html";
+	}
+	else if (myProfessor === "Mrs S.Swapna" && DayOrder === "Day Order 6")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Swapna%206.html";
+	}
+
+//Mrs K.Hima Bindu
+
+            if (myProfessor === "Mrs K.Hima Bindu" && DayOrder === "Day Order 1") 
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Hima%20Bindu/Mrs%20K.Hima%20Bindu%201.html";
+        }
+	else if (myProfessor === "Mrs K.Hima Bindu" && DayOrder === "Day Order 2")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Hima%20Bindu/Mrs%20K.Hima%20Bindu%202.html";
+	}
+	else if (myProfessor === "Mrs K.Hima Bindu" && DayOrder === "Day Order 3")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Hima%20Bindu/Mrs%20K.Hima%20Bindu%203.html";
+	}
+	else if (myProfessor === "Mrs K.Hima Bindu" && DayOrder === "Day Order 4")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Hima%20Bindu/Mrs%20K.Hima%20Bindu%204.html";
+	}
+	else if (myProfessor === "Mrs K.Hima Bindu" && DayOrder === "Day Order 5")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Hima%20Bindu/Mrs%20K.Hima%20Bindu%205.html";
+	}
+	else if (myProfessor === "Mrs K.Hima Bindu" && DayOrder === "Day Order 6")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Hima%20Bindu/Mrs%20K.Hima%20Bindu%206.html";
+	}
+
+
+
+//Mrs S.Lakshmi
+
+            if (myProfessor === "Mrs S.Lakshmi" && DayOrder === "Day Order 1") 
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Lakshmi/Mrs%20S.Lakshmi%201.html";
+        }
+	else if (myProfessor === "Mrs S.Lakshmi" && DayOrder === "Day Order 2")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Lakshmi/Mrs%20S.Lakshmi%202.html";
+	}
+	else if (myProfessor === "Mrs S.Lakshmi" && DayOrder === "Day Order 3")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Lakshmi/Mrs%20S.Lakshmi%203.html";
+	}
+	else if (myProfessor === "Mrs S.Lakshmi" && DayOrder === "Day Order 4")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Lakshmi/Mrs%20S.Lakshmi%204.html";
+	}
+	else if (myProfessor === "Mrs S.Lakshmi" && DayOrder === "Day Order 5")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Lakshmi/Mrs%20S.Lakshmi%205.html";
+	}
+	else if (myProfessor === "Mrs S.Lakshmi" && DayOrder === "Day Order 6")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20S.Lakshmi/Mrs%20S.Lakshmi%206.html";
+	}
+
+
+//Mrs K.Anitha
+
+            if (myProfessor === "Mrs K.Anitha" && DayOrder === "Day Order 1") 
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Anitha/Mrs%20K.Anitha%201.html";
+        }
+	else if (myProfessor === "Mrs K.Anitha" && DayOrder === "Day Order 2")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Anitha/Mrs%20K.Anitha%202.html";
+	}
+	else if (myProfessor === "Mrs K.Anitha" && DayOrder === "Day Order 3")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Anitha/Mrs%20K.Anitha%203.html";
+	}
+	else if (myProfessor === "Mrs K.Anitha" && DayOrder === "Day Order 4")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Anitha/Mrs%20K.Anitha%204.html";
+	}
+	else if (myProfessor === "Mrs K.Anitha" && DayOrder === "Day Order 5")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Anitha/Mrs%20K.Anitha%205.html";
+	}
+	else if (myProfessor === "Mrs K.Anitha" && DayOrder === "Day Order 6")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20K.Anitha/Mrs%20K.Anitha%206.html";
+	}
+
+//Mrs D.Sravani
+
+            if (myProfessor === "Mrs D.Sravani" && DayOrder === "Day Order 1") 
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20D.Sravani/Mrs%20D.Sravani%201.html";
+        }
+	else if (myProfessor === "Mrs D.Sravani" && DayOrder === "Day Order 2")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20D.Sravani/Mrs%20D.Sravani%202.html";
+	}
+	else if (myProfessor === "Mrs D.Sravani" && DayOrder === "Day Order 3")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20D.Sravani/Mrs%20D.Sravani%203.html";
+	}
+	else if (myProfessor === "Mrs D.Sravani" && DayOrder === "Day Order 4")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20D.Sravani/Mrs%20D.Sravani%204.html";
+	}
+	else if (myProfessor === "Mrs D.Sravani" && DayOrder === "Day Order 5")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20D.Sravani/Mrs%20D.Sravani%205.html";
+	}
+	else if (myProfessor === "Mrs D.Sravani" && DayOrder === "Day Order 6")
+	{
+                alert("Redirecting to the specified page.");
+                window.location.href = "file:///C:/Users/Jayant/Desktop/Mini%20Project/FInd-your-classroom/Mrs%20D.Sravani/Mrs%20D.Sravani%206.html";
+	}
+
+
+
+
+
+		}
+    </script>
+
+</body>
+
+</html>
+
